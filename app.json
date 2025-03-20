@@ -8,6 +8,9 @@
     "laravel",
     "blade"
   ],
+    "addons": [
+     "cleardb:ignite"
+   ],
   "scripts": {
     "postdeploy": "php artisan migrate --force && php artisan db:seed --force"
   },
