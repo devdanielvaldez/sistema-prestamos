@@ -8,9 +8,6 @@
     "laravel",
     "blade"
   ],
-  "addons": [
-    "cleardb:ignite"
-  ],
   "scripts": {
     "postdeploy": "php artisan migrate --force && php artisan db:seed --force"
   },
@@ -26,6 +23,12 @@
       "description": "This should be changed with `heroku config:set APP_KEY=xxx` after the initial deploy. Run `heroku run php artisan key:generate --show` to generate a new app key.",
       "value": "base64:4tLwD4XBdiP0SmHjbR08bkbl7S/itIi9Xj+X6+W93eo="
     },
-    "APP_DEBUG": "true"
+    "APP_DEBUG": "true",
+    "DB_CONNECTION": "mysql",
+    "DB_HOST": "data",
+"DB_PORT": "data",
+"DB_DATABASE": "data",
+"DB_USERNAME": "data",
+"DB_PASSWORD": "data"
   }
 }
